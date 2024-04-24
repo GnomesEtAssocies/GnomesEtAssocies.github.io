@@ -1,27 +1,42 @@
-html, body {
+/* Global styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    height: 100%;
-    background-color: #F5F5DC;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Couleur de fond */
+}
+
+/* Header styles */
+.IHeader {
+    height: 200px; /* Hauteur du header */
+}
+
+/* Footer styles */
+.IFooter {
+    height: 250px; /* Hauteur du footer */
+}
+
+/* Content styles */
+.content {
+    display: flex; /* Utilisation de flexbox */
+    align-items:start ; /* Centrage vertical */
+    justify-content: flex-start; /* Alignement à gauche */
+    padding: 20px; /* Ajout de marge intérieure */
+    box-sizing: border-box; /* Boîte à débordement */
 }
 
 .Icarousel {
-    width: 30%; /* Largeur du carrousel par défaut */
-
-    /* Media Query pour les écrans de taille moyenne à grande */
-    @media screen and (max-width: 1200px) {
-        width: 30%; /* Largeur du carrousel pour les écrans moyens */
-    }
-
-    /* Media Query pour les écrans de petite taille */
-    @media screen and (max-width: 768px) {
-        width: 30%; /* Largeur du carrousel pour les écrans de petite taille */
-    }
-
-    /* Media Query pour les écrans très petits */
-    @media screen and (max-width: 480px) {
-        width: 20%; /* Largeur du carrousel pour les écrans très petits */
-    }
-
+    width: 30%; /* Largeur du carrousel */
     border: none;
+}
+
+.content p {
+    margin-top: 10%;
+    margin-left: 10%; /* Marge à gauche pour l'espacement */
+    width: 50%;
+    
 }

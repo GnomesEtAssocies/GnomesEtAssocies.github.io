@@ -1,4 +1,4 @@
-const folders = ['../images/images1/', '../images/images2/']; // Ajoutez ici tous les dossiers contenant des images
+const folders = ['../images/images1/', '../images/images2/', '../images/images3/']; // Ajoutez ici tous les dossiers contenant des images
 const images = [];
 let maxImageWidth = 0;
 let maxImageHeight = 0;
