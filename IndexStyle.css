@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F5F5DC;
+}
+
+.Icarousel {
+    width: 30%; /* Largeur du carrousel par défaut */
+
+    /* Media Query pour les écrans de taille moyenne à grande */
+    @media screen and (max-width: 1200px) {
+        width: 30%; /* Largeur du carrousel pour les écrans moyens */
+    }
+
+    /* Media Query pour les écrans de petite taille */
+    @media screen and (max-width: 768px) {
+        width: 30%; /* Largeur du carrousel pour les écrans de petite taille */
+    }
+
+    /* Media Query pour les écrans très petits */
+    @media screen and (max-width: 480px) {
+        width: 20%; /* Largeur du carrousel pour les écrans très petits */
+    }
+
+    border: none;
+}

@@ -1,7 +1,7 @@
 .carousel {
     position: relative; /* Pour positionner les boutons relativement à ce conteneur */
     width: 100%;
-    max-height: 70vh; /* Ajuster la hauteur à 70% de la hauteur de la fenêtre */
+    max-height: 100%; /* Ajuster la hauteur à 70% de la hauteur de la fenêtre */
     overflow: hidden;
     display: flex; /* Utiliser Flexbox */
     justify-content: center; /* Centrer horizontalement */
@@ -12,11 +12,11 @@
 .carousel img {
     width: auto; /* Ajuster automatiquement la largeur pour conserver les proportions */
     height: auto; /* Ajuster automatiquement la hauteur pour conserver les proportions */
-    max-width: 70vh; /* Limiter la largeur de l'image à 70% de la hauteur de la fenêtre */
-    max-height: 70vh; /* Limiter la hauteur de l'image à 70% de la hauteur de la fenêtre */
+    max-width: 100%; /* Limiter la largeur de l'image à 100% de la largeur du conteneur */
+    max-height: 100%; /* Limiter la hauteur de l'image à 100% de la hauteur du conteneur */
     object-fit: contain; /* Conserver les proportions et ajuster l'image pour s'adapter à la boîte */
     display: none;
-    margin: 10px; /* Espacement entre les images */
+    /*margin: 10px; /* Espacement entre les images */
 }
 
 .carousel img.active {
