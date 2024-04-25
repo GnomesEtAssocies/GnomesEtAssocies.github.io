@@ -1,0 +1,53 @@
+body{
+    width: 100%;/**/
+    padding: 0%;/**/
+    margin: 0%;/**/
+}
+.activitees {
+    background-color: #3c3c3c;
+    width: 100%;
+    padding-top: 20px;
+    position: relative; /* Ajout du positionnement relatif pour positionner les titres */
+  }
+  
+  .activitees table {
+    width: 100%; /* Tableau prend toute la largeur de la div */
+    table-layout: fixed; /* Les colonnes auront la même largeur */
+  }
+  
+  .activitees td {
+    position: relative; /* Ajout du positionnement relatif pour positionner les titres */
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    height: 200px; /* Hauteur fixe pour toutes les cellules */
+    overflow: hidden; /* Masquer le contenu qui dépasse */
+  }
+  .activitees td {
+    
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .activitees td a {
+    text-decoration: none; /* Enlever la soulignement des liens */
+    color: #FFF; /* Couleur du texte */
+  }
+  
+  .activitees td a:hover {
+    color: #CCC; /* Couleur du texte au survol */
+  }
+  
+  .activitees img {
+    width: auto;
+    height: 100%; /* Remplir la hauteur de la cellule */
+    object-fit: cover; /* Adapter l'image pour remplir complètement le conteneur tout en conservant les proportions */
+  }
+  h2{
+    /*background-color: #535721;/**/
+    width: 100%;/**/
+  }
+  

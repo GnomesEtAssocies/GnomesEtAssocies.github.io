@@ -49,6 +49,9 @@ nav ul {
 
 nav li {
   margin: 10px; /* Ajoutez une marge autour de chaque lien */
+  font-size: 20px; /* Reduz la taille du texte */
+  text-decoration: underline; /* Souligne le texte */
+  /*text-decoration-color: red; /* Couleur du soulignement */
 }
 
 nav a {

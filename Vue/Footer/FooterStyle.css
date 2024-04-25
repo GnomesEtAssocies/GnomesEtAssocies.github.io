@@ -1,9 +1,15 @@
 /* Footer styles */
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #6B8E23;
     color: #FFF;
     padding: 1em;
+    z-index: -1; /* Assurez-vous que le footer est sous les autres éléments */
 }
+
 
 .container {
     display: flex;
