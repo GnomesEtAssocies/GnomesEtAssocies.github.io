@@ -1,0 +1,83 @@
+/* Global styles */
+@font-face {
+    font-family: 'Boisterb';
+    src: url('Vue/polices/BoisterBlack/Boisterb.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'scribish';
+    src: url('Vue/polices/medieval-scribish/scribish.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sinistre';
+    src: url('Vue/polices/sinistre/Sinistre-S†Caroline.otf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'sinistre', sans-serif;
+    background-color: #F5F5DC; /* Couleur de fond */
+}
+/* Header styles */
+.IHeader {
+    height: 200px; /* Hauteur du header */
+    /*position: sticky;/**/
+    top: 0;
+}
+
+/* Footer styles */
+.IFooter {
+    height: 300px; /* Hauteur du footer */
+    bottom: 0;
+}
+
+/* Toutes les autres div suivantes */
+.content {
+    display: flex; /* Utilisation de flexbox */
+    align-items: start; /* Centrage vertical */
+    justify-content: flex-start; /* Alignement à gauche */
+    padding: 20px; /* Ajout de marge intérieure */
+    box-sizing: border-box; /* Boîte à débordement */
+}
+
+.Icarousel {
+    width: 30%; /* Largeur du carrousel */
+    border: none;
+}
+
+.content p {
+    margin-top: 10%; /* Marge en haut */
+    margin-left: 10%; /* Marge à gauche pour l'espacement */
+    width: 50%; /* Largeur du paragraphe */
+    line-height: 1.5; /* Augmentation de l'espacement entre les lignes */
+    font-size: 25px; /* Augmentation de la taille de la police */
+    font-family: 'sinistre', sans-serif; /* Utilisation de la police téléchargée avec une police de secours */
+}
+#D1{
+    justify-content: center; /* Centralisation verticale */
+    font-size: 30px;
+}
+#D3 {
+    height: 80px;
+    background-color: #393f5d; /* Couleur de fond */
+    background-image: url('Vue/images/logo/deco2.png'); /* Chemin de l'image */
+    background-size: cover; /* Ajustement de la taille de l'image */
+    background-position: center; /* Positionnement de l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+    /* Ajoutez d'autres styles si nécessaire */
+}
+#D4{
+    padding-top: 20px;
+    display: block;/**/
+    justify-content: center;
+    font-size: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /*height: 100%;/**/
+}
+h2{
+    
+    text-align: center;
+}

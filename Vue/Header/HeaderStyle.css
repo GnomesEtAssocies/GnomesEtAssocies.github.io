@@ -1,0 +1,86 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6B8E23; /* Sable clair */
+}
+
+/* Header styles */
+header {
+  background-color: #6B8E23;
+  padding: 1em;
+}
+
+.container {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: space-between; /* Espacer les éléments horizontalement */
+}
+
+.logo {
+  width: 28%; /* ajustez la largeur selon vos besoins */
+}
+
+.title-links {
+  display:flex;
+  flex-direction: column; /* Afficher les éléments en colonne */
+  align-items: flex-start; /* Aligner les éléments à droite */
+  margin-right: 37%; /* Décalage vers la gauche */
+}
+
+
+h1 {
+  margin-right: 15px; /* Ajoutez une marge à droite pour séparer le titre des liens */
+  margin-left: 10px; /* Décalage vers la gauche */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 10px; /* Ajoutez une marge autour de chaque lien */
+  font-size: 20px; /* Reduz la taille du texte */
+  text-decoration: underline; /* Souligne le texte */
+  /*text-decoration-color: red; /* Couleur du soulignement */
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+/* Modifier la disposition en mode responsive */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Afficher les éléments en colonne dans le mode responsive */
+    align-items: center; /* Centrer les éléments horizontalement dans le mode responsive */
+  }
+
+  .logo {
+    order: -1; /* Changer l'ordre de l'élément logo pour qu'il apparaisse en premier */
+    width: 50%;
+    margin-bottom: 15px; /* Ajouter une marge en bas pour séparer le logo du titre dans le mode responsive */
+  }
+
+  .title-links {
+    margin-right: 0; /* Réinitialiser la marge droite dans le mode responsive */
+  }
+
+  h1 {
+    margin: 0; /* Réinitialiser la marge du titre dans le mode responsive */
+  }
+}

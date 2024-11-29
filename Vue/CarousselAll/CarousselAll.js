@@ -1,4 +1,4 @@
-const folders = ['images1/', 'images2/']; // Ajoutez ici tous les dossiers contenant des images
+const folders = ['../images/images1/', '../images/images2/', '../images/images3/']; // Ajoutez ici tous les dossiers contenant des images
 const images = [];
 let maxImageWidth = 0;
 let maxImageHeight = 0;
@@ -25,7 +25,7 @@ function startRandomImageDisplay() {
     const randomIndex = Math.floor(Math.random() * images.length);
     displayImage(randomIndex);
     startRandomImageDisplay(); // Relance le défilement après un délai supplémentaire
-  }, 3500);
+  }, 1500 /*3500*/);
 }
 
 // Fonction pour arrêter le défilement aléatoire des images
