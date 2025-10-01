@@ -3,11 +3,11 @@
 rapide site web de l'asso des gnomes&associés
 
 url d'acces a l'index:
-- https://GnomesEtAssocies.github.io
-
+- internet: https://GnomesEtAssocies.github.io
+- sur le serveur wamp de dev: http://localhost/GnomesNewSite/GnomesEtAssocies.github.io/
 
 # Features actuelles
-
+page acceuil a finir
 
 # Features a ajouter
 

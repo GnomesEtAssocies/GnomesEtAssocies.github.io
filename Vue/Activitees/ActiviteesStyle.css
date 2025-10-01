@@ -1,53 +1,75 @@
-body{
-    width: 100%;/**/
-    padding: 0%;/**/
-    margin: 0%;/**/
+.activitees-wrapper {
+  background-color: #3c3c3c;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center; /* centre le bandeau horizontal */
 }
-.activitees {
-    background-color: #3c3c3c;
-    width: 100%;
-    padding-top: 20px;
-    position: relative; /* Ajout du positionnement relatif pour positionner les titres */
+
+.activitees-banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* espace entre les images */
+  max-width: 1000px; /* largeur totale du bandeau */
+  width: 100%;
+}
+
+.activitees-item {
+  flex: 0 0 auto;
+  width: 300px; /* largeur fixe des images */
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #4a4a4a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activitees-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.activitees-item a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.activitees-img {
+  width: 100%;
+  height: 250px; /* hauteur fixe du bandeau */
+  object-fit: cover; /* garde le ratio de l'image */
+  display: block;
+}
+
+.activitees-title {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .activitees-item {
+    width: 250px;
   }
-  
-  .activitees table {
-    width: 100%; /* Tableau prend toute la largeur de la div */
-    table-layout: fixed; /* Les colonnes auront la même largeur */
+
+  .activitees-img {
+    height: 150px;
   }
-  
-  .activitees td {
-    position: relative; /* Ajout du positionnement relatif pour positionner les titres */
-    text-align: center;
-    padding: 10px;
-    width: 50%;
-    height: 200px; /* Hauteur fixe pour toutes les cellules */
-    overflow: hidden; /* Masquer le contenu qui dépasse */
+}
+
+@media (max-width: 768px) {
+  .activitees-banner {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
   }
-  .activitees td {
-    
-    text-align: center;
-    padding: 10px;
-    width: 50%;
-    height: 200px;
-    overflow: hidden;
+
+  .activitees-item {
+    width: 80%;
   }
-  
-  .activitees td a {
-    text-decoration: none; /* Enlever la soulignement des liens */
-    color: #FFF; /* Couleur du texte */
+
+  .activitees-img {
+    height: 150px;
   }
-  
-  .activitees td a:hover {
-    color: #CCC; /* Couleur du texte au survol */
-  }
-  
-  .activitees img {
-    width: auto;
-    height: 100%; /* Remplir la hauteur de la cellule */
-    object-fit: cover; /* Adapter l'image pour remplir complètement le conteneur tout en conservant les proportions */
-  }
-  h2{
-    /*background-color: #535721;/**/
-    width: 100%;/**/
-  }
-  
+}

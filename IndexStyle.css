@@ -20,17 +20,18 @@ body {
     font-family: 'sinistre', sans-serif;
     background-color: #F5F5DC; /* Couleur de fond */
 }
-/* Header styles */
-.IHeader {
-    height: 200px; /* Hauteur du header */
-    /*position: sticky;/**/
-    top: 0;
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Footer styles */
-.IFooter {
-    height: 300px; /* Hauteur du footer */
-    bottom: 0;
+/* Le contenu prend toute la place dispo */
+.page-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Toutes les autres div suivantes */
@@ -42,13 +43,9 @@ body {
     box-sizing: border-box; /* Boîte à débordement */
 }
 
-.Icarousel {
-    width: 30%; /* Largeur du carrousel */
-    border: none;
-}
-
 .content p {
-    margin-top: 10%; /* Marge en haut */
+    margin-top: 3%; /* Marge en haut */
+    margin-bottom: 3%; /* Marge en bas */
     margin-left: 10%; /* Marge à gauche pour l'espacement */
     width: 50%; /* Largeur du paragraphe */
     line-height: 1.5; /* Augmentation de l'espacement entre les lignes */
@@ -80,4 +77,7 @@ body {
 h2{
     
     text-align: center;
+}
+#footer {
+    margin-top: auto;
 }
