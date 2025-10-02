@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Figurine</title>
+    <link rel="stylesheet" type="text/css" href="FigurineStyle.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+    fetch("../../Vue/Header/Header.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+        });
+    </script>
+
+    <main class="page-content">
+        <div class="content" id="D1">
+            <h1 id="title">La figurine</h1>
+        </div>
+
+        <div id="carrousel"></div>
+        <script>
+        fetch("../../Vue/Carrousel/Carrousel.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("carrousel").innerHTML = html;
+            initCarrousel("carrousel-root", [
+            "../../Vue/images/Fig/1.jpg",
+            "../../Vue/images/Fig/2.jpg",
+            "../../Vue/images/Fig/3.jpg",
+            "../../Vue/images/Fig/4.jpg",
+            "../../Vue/images/Fig/5.jpg",
+            "../../Vue/images/Fig/6.jpg",
+            "../../Vue/images/Fig/7.jpg",
+            "../../Vue/images/Fig/8.jpg",
+            "../../Vue/images/Fig/9.jpg",
+            "../../Vue/images/Fig/10.jpg",
+            "../../Vue/images/Fig/11.jpg",
+            "../../Vue/images/Fig/12.jpg",
+            "../../Vue/images/Fig/13.jpg",
+            "../../Vue/images/Fig/14.jpg",
+            ], 5);
+        });
+        </script>
+
+        <div class="content" id="D2">
+            <p>
+                La figurine est un ensemble complet d'activitées, il va du montage et de la peinture des figurines jusqu'au jeux les utilisant.
+            </p>
+        </div>
+
+        <div class="separation" id="D3"></div>
+
+        <div class="content" id="D4">
+            <h2>Le montage</h2>
+            <p>
+                Pour les figurines, il faut en premier lieu récupérer chaque pieces de plaquettes en plastique avec une pince puis les assembler en les collant.<br>
+                Pour les maquettes cela peut etre la meme chose si elles sont achetées en commerce ou fabriquées à la main avec des matériaux comme du bois, du carton, du platre, de la mousse etc...
+            </p>
+            <div id="carrousel-montage"></div>
+            <script>
+            fetch("../../Vue/Carrousel/Carrousel.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("carrousel-montage").innerHTML = html;
+                initCarrousel("carrousel-montage", [
+                "../../Vue/images/Fig/15.jpg",
+                "../../Vue/images/Fig/16.jpeg",
+                "../../Vue/images/Fig/17.webp",
+                "../../Vue/images/Fig/13.jpg",
+                "../../Vue/images/Fig/19.jpg",
+                "../../Vue/images/Fig/18.jpg",
+                "../../Vue/images/Fig/12.jpg",
+                ], 5);
+            });
+            </script>
+        </div>
+
+        <div class="separation" id="D3"></div>
+
+        <div class="content" id="D4">
+            <h2>La peinture</h2>
+            <p>
+                Il faut ensuite peindre les figurines, on les sous couche avec une bombe noir ou blanche afin que la peinture adhere bien à la figurine et ensuite il faut laisser parler son âme d'artiste, on fait la même chose pour les maquettes et les décors.
+            </p>
+            <div id="carrousel-peinture"></div>
+            <script>
+            fetch("../../Vue/Carrousel/Carrousel.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("carrousel-peinture").innerHTML = html;
+                initCarrousel("carrousel-peinture", [
+                "../../Vue/images/Fig/20.jpg",
+                "../../Vue/images/Fig/22.jpg",
+                "../../Vue/images/Fig/21.jpg",
+                "../../Vue/images/Fig/23.webp",
+                "../../Vue/images/Fig/24.png",
+                ], 5);
+            });
+            </script>
+        </div>
+
+        <div class="separation" id="D3"></div>
+
+        <div class="content" id="D4">
+            <h2>Le jeu</h2>
+            <p>
+                Une fois nos figurines et nos décors prets, il ne nous reste plus qu'a les utilier pour jouer dans des jeux de plateaux sur des terrains et avec des règles plus ou moins complexes.
+                Ces jeux peuvent être souvent longs et demandent de la stratégie. 
+            </p>
+            <div id="carrousel-jeux"></div>
+            <script>
+            fetch("../../Vue/Carrousel/Carrousel.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("carrousel-jeux").innerHTML = html;
+                initCarrousel("carrousel-jeux", [
+                "../../Vue/images/Fig/25.jpg",
+                "../../Vue/images/Fig/26.jpg",
+                "../../Vue/images/Fig/27.jpg",
+                "../../Vue/images/Fig/28.jpg",
+                "../../Vue/images/Fig/29.jpg",
+                ], 5);
+            });
+            </script>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+    fetch("../../Vue/Footer/Footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+
+<script src="../../Vue/Carrousel/Carrousel.js"></script>
+</body>
+</html>

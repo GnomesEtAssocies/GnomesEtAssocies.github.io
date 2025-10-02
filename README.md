@@ -12,3 +12,7 @@ page acceuil a finir
 # Features a ajouter
 
 
+# structure du site
+
+index.html
+->
