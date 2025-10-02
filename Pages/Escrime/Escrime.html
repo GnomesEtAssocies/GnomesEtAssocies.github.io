@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escrime</title>
+    <link rel="stylesheet" type="text/css" href="EscrimeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Carrousel/CarrouselStyle.css">
+    <script src="../../Vue/Carrousel/Carrousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+    fetch("../../Vue/Header/Header.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+        });
+    </script>
+
+    <main class="page-content">
+        <div class="content" id="D1">
+            <h1 id="title">L'escrime Ludique</h1>
+        </div>
+
+        <div id="carrousel-escrime"></div>
+        <script>
+            initCarrousel("carrousel-escrime", [
+                "../../Vue/images/Trollball/1.jpg",
+                "../../Vue/images/Trollball/2.jpg",
+                "../../Vue/images/Trollball/3.jpg",
+                "../../Vue/images/Trollball/4.jpg",
+                "../../Vue/images/Trollball/5.jpg",
+                "../../Vue/images/Trollball/6.jpg",
+            ], 5);
+        </script>
+
+        <div class="content" id="D2">
+            <p>
+                L'escrime ludique est une activité sportive consistant a combattre son ou ses adversaires dans des combats sécurisés.
+                Pour ne pas blesser son adversaire, les armes sont des tiges en fibre de verre rigide entourées de mousse, de plus 
+                les règles de sécurité de l'escrime ludique sont de faire de touches et non des frappes et de controler sa force, 
+                en plus de cela il est interdit de toucher la tête et de mettre des coups d'estoc avec la pointe vers son adversaire.
+                Ces règles permettent à petits et grands de s'amuser sans danger.
+                Nous accueillons les enfants à partir de 10 ans lors de nos créneaux du dimanche matin de 10h00 à 12h00 au parc de 
+                Teteghem. 
+            </p>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+    fetch("../../Vue/Footer/Footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+</body>
+</html>

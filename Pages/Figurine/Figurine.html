@@ -3,6 +3,8 @@
 <head>
     <title>Figurine</title>
     <link rel="stylesheet" type="text/css" href="FigurineStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Carrousel/CarrouselStyle.css">
+    <script src="../../Vue/Carrousel/Carrousel.js"></script>
     <meta charset="UTF-8">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,13 +24,9 @@
             <h1 id="title">La figurine</h1>
         </div>
 
-        <div id="carrousel"></div>
+        <div id="carrousel-fig"></div>
         <script>
-        fetch("../../Vue/Carrousel/Carrousel.html")
-        .then(res => res.text())
-        .then(html => {
-            document.getElementById("carrousel").innerHTML = html;
-            initCarrousel("carrousel-root", [
+            initCarrousel("carrousel-fig", [
             "../../Vue/images/Fig/1.jpg",
             "../../Vue/images/Fig/2.jpg",
             "../../Vue/images/Fig/3.jpg",
@@ -44,7 +42,6 @@
             "../../Vue/images/Fig/13.jpg",
             "../../Vue/images/Fig/14.jpg",
             ], 5);
-        });
         </script>
 
         <div class="content" id="D2">
@@ -63,10 +60,6 @@
             </p>
             <div id="carrousel-montage"></div>
             <script>
-            fetch("../../Vue/Carrousel/Carrousel.html")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("carrousel-montage").innerHTML = html;
                 initCarrousel("carrousel-montage", [
                 "../../Vue/images/Fig/15.jpg",
                 "../../Vue/images/Fig/16.jpeg",
@@ -76,7 +69,6 @@
                 "../../Vue/images/Fig/18.jpg",
                 "../../Vue/images/Fig/12.jpg",
                 ], 5);
-            });
             </script>
         </div>
 
@@ -89,10 +81,6 @@
             </p>
             <div id="carrousel-peinture"></div>
             <script>
-            fetch("../../Vue/Carrousel/Carrousel.html")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("carrousel-peinture").innerHTML = html;
                 initCarrousel("carrousel-peinture", [
                 "../../Vue/images/Fig/20.jpg",
                 "../../Vue/images/Fig/22.jpg",
@@ -100,7 +88,6 @@
                 "../../Vue/images/Fig/23.webp",
                 "../../Vue/images/Fig/24.png",
                 ], 5);
-            });
             </script>
         </div>
 
@@ -114,10 +101,6 @@
             </p>
             <div id="carrousel-jeux"></div>
             <script>
-            fetch("../../Vue/Carrousel/Carrousel.html")
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById("carrousel-jeux").innerHTML = html;
                 initCarrousel("carrousel-jeux", [
                 "../../Vue/images/Fig/25.jpg",
                 "../../Vue/images/Fig/26.jpg",
@@ -125,7 +108,6 @@
                 "../../Vue/images/Fig/28.jpg",
                 "../../Vue/images/Fig/29.jpg",
                 ], 5);
-            });
             </script>
         </div>
     </main>
@@ -138,7 +120,5 @@
             document.getElementById("footer").innerHTML = html;
         });
     </script>
-
-<script src="../../Vue/Carrousel/Carrousel.js"></script>
 </body>
 </html>
