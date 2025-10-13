@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grandeur Nature</title>
+    <link rel="stylesheet" type="text/css" href="GNStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Header/HeaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Footer/FooterStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Carrousel/CarrouselStyle.css">
+    <script src="../../Vue/Carrousel/Carrousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+    fetch("../../Vue/Header/Header.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+        });
+    </script>
+
+    <main class="page-content">
+        <div class="content" id="D1">
+            <h1 id="title">Le Jeu de Rôle Grandeur Nature</h1>
+        </div>
+
+        <div id="carrousel-gn"></div>
+        <script>
+            initCarrousel("carrousel-gn", [
+                "../../Vue/images/GN/1.jpg",
+                "../../Vue/images/GN/11.png",
+                "../../Vue/images/GN/18.webp",
+                "../../Vue/images/GN/17.jpg",
+                "../../Vue/images/GN/7.jpg",
+                "../../Vue/images/GN/8.jpg",
+                "../../Vue/images/GN/9.jpg",
+                "../../Vue/images/GN/10.jpg",
+                "../../Vue/images/GN/12.jpg",
+                "../../Vue/images/GN/13.png",
+                "../../Vue/images/GN/14.jpg",
+                "../../Vue/images/GN/15.jpg",
+                "../../Vue/images/GN/16.jpg",
+            ], 5);
+        </script>
+        <div class="content" id="D2">
+            <p>
+                Le jeu de rôle grandeur nature est une forme de jeu où les participants incarnent physiquement des 
+                personnages dans un univers fictif. <br>Contrairement au jeu de rôle sur table, où les actions sont 
+                décrites verbalement, le GN se joue en costume, dans un décor réel, et les joueurs interagissent 
+                directement entre eux comme s’ils étaient réellement leurs personnages.
+                <br><br>Chaque joueur crée ou reçoit un personnage doté d’une histoire, d’objectifs et de traits de 
+                personnalité. Le joueur agit, parle et réagit comme ce personnage tout au long du jeu. L’univers 
+                peut être médiéval-fantastique, post-apocalyptique, historique, futuriste, ou inspiré d’une œuvre 
+                connue
+                <br><br>
+                Nos membres participent ou aident à organiser certains GN comme 
+                <a href="https://www.facebook.com/profile.php?id=100083022557875">Terre d'Ourann</a>, 
+                <a href="https://www.facebook.com/LARPassion">Les 3 Mondes</a>,
+                <a href="https://www.facebook.com/terres.sauvages.59440">Terres Sauvage</a>,
+                <a href=https://www.facebook.com/profile.php?id=100079170844100">Fantastiquest</a>
+                et bien d'autres.
+            </p>
+        </div>
+
+        <div class="separation" id="D3"></div>
+
+        <div class="content" id="D4">
+            <h2>Notre GN</h2>
+        </div>
+        <div id="carrousel-gn2"></div>
+        <script>
+            initCarrousel("carrousel-gn2", [
+                "../../Vue/images/GN/2.jpg",
+                "../../Vue/images/GN/3.jpg",
+                "../../Vue/images/GN/4.jpg",
+                "../../Vue/images/GN/5.jpg",
+                "../../Vue/images/GN/6.jpg",
+            ], 5);
+        </script>
+        <div class="content" id="D2">
+            <p>
+                L'association organise son propre GN dans un univers médiéval fantastique fait maison. 
+                Il se déroule le premier week end de juillet chaque année depuis 2024. 
+                <br>Il dure 1 week end du vendredi soir au dimanche midi et se veut axé sur la prise 
+                d'initiative, le jeu et le fair play pour que les aspects de survie et de combat 
+                soient au mieux appréciés de tous.
+                <br><br>Vous pouvez retrouver toutes les informations et news sur la 
+                <a href="https://www.facebook.com/GNomesLeGN">page facebook du GN</a>,
+                vous retrouverez les documents sur 
+                <a href="https://drive.google.com/drive/folders/1psrqWldKBE6r7JFJ1lQ3z4KeCIFF0XxR?usp=sharing">le drive public</a>
+                et discuter facilement avec les joueurs et les orgas sur <a href="https://discord.gg/N5CKeKwnth">le discord</a>.
+            </p>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+    fetch("../../Vue/Footer/Footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+</body>
+</html>

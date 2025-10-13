@@ -3,6 +3,8 @@
 <head>
     <title>Escrime</title>
     <link rel="stylesheet" type="text/css" href="JeuxStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Header/HeaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Footer/FooterStyle.css">
     <link rel="stylesheet" type="text/css" href="../../Vue/Carrousel/CarrouselStyle.css">
     <script src="../../Vue/Carrousel/Carrousel.js"></script>
     <meta charset="UTF-8">
@@ -21,30 +23,55 @@
 
     <main class="page-content">
         <div class="content" id="D1">
-            <h1 id="title">Les jeux</h1>
+            <h2>Les jeux communautaires</h2>
         </div>
-
-        <div id="carrousel-escrime"></div>
+        <div id="carrousel-jeux"></div>
         <script>
-            initCarrousel("carrousel-escrime", [
-                "../../Vue/images/Trollball/1.jpg",
-                "../../Vue/images/Trollball/2.jpg",
-                "../../Vue/images/Trollball/3.jpg",
-                "../../Vue/images/Trollball/4.jpg",
-                "../../Vue/images/Trollball/5.jpg",
-                "../../Vue/images/Trollball/6.jpg",
+            initCarrousel("carrousel-jeux", [
+                "../../Vue/images/Jeux/1.webp",
+                "../../Vue/images/Jeux/2.jpeg",
+                "../../Vue/images/Jeux/3.jpeg",
+                "../../Vue/images/Jeux/4.jpeg",
+                "../../Vue/images/Jeux/5.jpg",
+                "../../Vue/images/Jeux/6.jpg",
+                "../../Vue/images/Jeux/7.jpg",
             ], 5);
         </script>
-
         <div class="content" id="D2">
             <p>
-                L'escrime ludique est une activité sportive consistant a combattre son ou ses adversaires dans des combats sécurisés.
-                Pour ne pas blesser son adversaire, les armes sont des tiges en fibre de verre rigide entourées de mousse, de plus 
-                les règles de sécurité de l'escrime ludique sont de faire de touches et non des frappes et de controler sa force, 
-                en plus de cela il est interdit de toucher la tête et de mettre des coups d'estoc avec la pointe vers son adversaire.
-                Ces règles permettent à petits et grands de s'amuser sans danger.
-                Nous accueillons les enfants à partir de 10 ans lors de nos créneaux du dimanche matin de 10h00 à 12h00 au parc de 
-                Teteghem. 
+                Nous organisons une fois par mois une session de jeux communnautaires, ces soirées permettent à tous les membres de 
+                jouer au même jeu parfois à plus d'une trentaine en même temps.
+                Ces jeux peuvent êtres coopératifs ou en équipe, parfois solitaires. 
+                Les bases du jeux peuvent être très variées également, de al statégie, bluff, enquête, logique, déduction, imagination, 
+                narration et bien d'autres aspects.
+            </p>
+        </div>
+
+        <div class="separation" id="D3"></div>
+
+        <div class="content" id="D1">
+            <h2>Les jeux de rôles</h2>
+        </div>
+        <div id="carrousel-jdr"></div>
+        <script>
+            initCarrousel("carrousel-jdr", [
+                "../../Vue/images/Jeux/11.jpeg",
+                "../../Vue/images/Jeux/12.webp",
+                "../../Vue/images/Jeux/13.jpg",
+                "../../Vue/images/Jeux/8.webp",
+                "../../Vue/images/Jeux/9.webp",
+                "../../Vue/images/Jeux/10.webp",
+                "../../Vue/images/Jeux/14.jpg",
+            ], 5);
+        </script>
+        <div class="content" id="D2">
+            <p>
+                Nous proposont également des jeux de rôles, entre 1 et 4 tables différentes selon les semaines et les périodes de l'année.
+                Les jeux de rôles sont des jeux composés généralement d'un maître des jeux et de joueurs, le maître des jeux explique et 
+                détail l'univers dans lequel évoluent les joueurs et ce qu'il se trouve autour d'eux. D'un autre côté, les joueurs qui ont 
+                créés un personnage cohérent avec l'univers du jeu, vont alors dire ce qu'ils essayent de faire et évoluer dans une histoire 
+                racontée par le maître des jeux. 
+                Ces jeux de rôles peuvent se dérouler dans de trèes nombreux univers et être très sérieux comme complètement loufoques ou simplistes.  
             </p>
         </div>
     </main>
