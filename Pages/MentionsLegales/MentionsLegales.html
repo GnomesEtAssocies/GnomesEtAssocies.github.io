@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mensions Légales</title>
+    <link rel="stylesheet" type="text/css" href="MentionsLegales.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Header/HeaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Footer/FooterStyle.css">
+    <link rel="stylesheet" type="text/css" href="../../Vue/Carrousel/CarrouselStyle.css">
+    <script src="../../Vue/Carrousel/Carrousel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+    fetch("../../Vue/Header/Header.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+        });
+    </script>
+
+    <main class="page-content">
+        <div class="content" id="D1">
+            <h2>Mentions Légales</h2>
+        </div>
+
+        <div class="content" id="D2">
+            <p>
+                Association Gnomes et Associés<br>
+                21, rue René Char – 59229 Téteghem-Coudekerque-Village<br>
+                RNA : W594005875<br>
+                Président et directeur de la publication : Stéphane Glaise<br>
+                Email : gnomes.asso@gmail.com<br><br><br>
+
+                Hébergeur :
+                GitHub, Inc.
+                88 Colin P. Kelly Jr St, San Francisco, CA 94107, États-Unis
+                Site web : https://pages.github.com/ <br><br><br>
+
+
+                Le contenu de ce site (textes, images, graphismes, logos) est la propriété de l’association 
+                Gnomes et Associés, sauf mention contraire.<br>
+                Toute reproduction ou diffusion sans autorisation préalable est interdite.<br><br><br>
+
+
+                Aucune donnée n'est collectée par le site de l'association des Gnomes&Associés.<br>
+                Aucune information personnelle n’est cédée à des tiers.<br>
+                Conformément à la loi Informatique et Libertés et au RGPD, vous pouvez exercer vos droits 
+                d’accès, de rectification ou de suppression en écrivant à gnomes.asso@gmail.com<br><br><br>
+
+
+                L’association Gnomes et Associés ne saurait être tenue responsable des erreurs, omissions 
+                ou indisponibilités temporaires du site.<br>
+
+
+                Les liens vers d’autres sites ne sont donnés qu’à titre informatif et n’engagent pas la 
+                responsabilité de l’association.<br>
+
+
+                Photos : membres de l’association / icônes issues de Freepik / design basé sur un thème 
+                personnalisé fait main.<br><br>
+
+
+                Page mise à jour le 14 octobre 2025.
+            </p>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script>
+    fetch("../../Vue/Footer/Footer.html")
+        .then(res => res.text())
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+</body>
+</html>
