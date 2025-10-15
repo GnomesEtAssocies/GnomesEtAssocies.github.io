@@ -17,7 +17,7 @@ url d'acces a l'index:
 - Accessibilité & SEO basique
 Pour que le site soit visible et utilisable par tous
 Titres <h1>, <h2>, balises alt sur images, méta-description, URLs claires, contraste de texte, navigation clavier, etc.
-- 
+- ajouter une section des asso partenaires et amis de l'association
 
 # structure du site
 
