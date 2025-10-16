@@ -20,6 +20,4 @@ Titres <h1>, <h2>, balises alt sur images, méta-description, URLs claires, cont
 - ajouter une section des asso partenaires et amis de l'association
 
 # structure du site
-
-index.html
-->
+voir fichier sitemap.xml
