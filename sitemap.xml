@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://GnomesEtAssocies.github.io/</loc>
+    <loc>https://gnomesetassocies.github.io/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/index.html</loc>
+    <loc>https://gnomesetassocies.github.io/index.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/Figurine/Figurine.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/Figurine/Figurine.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/Escrime/Escrime.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/Escrime/Escrime.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/Jeux/Jeux.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/Jeux/Jeux.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/GN/GN.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/GN/GN.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/evenement/evenement.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/evenement/evenement.html</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/Contact/Contact.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/Contact/Contact.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://GnomesEtAssocies.github.io/Pages/MentionsLegales/MentionsLegales.html</loc>
+    <loc>https://gnomesetassocies.github.io/Pages/MentionsLegales/MentionsLegales.html</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
