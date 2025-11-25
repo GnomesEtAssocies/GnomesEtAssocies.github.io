@@ -1,105 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Accueil</title>
-    <link rel="stylesheet" type="text/css" href="IndexStyle.css">
-    <link rel="stylesheet" type="text/css" href="Vue/Header/HeaderStyle.css">
-    <link rel="stylesheet" type="text/css" href="Vue/Footer/FooterStyle.css">
-    <meta charset="UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript, gnomes, site vitrine, association, trollball, figurine, jeux, GN, LARP, Grandeur Nature">
-    <meta name="description" content="Site vitrine de l'association des Gnomes&Associés.">
-    <meta name="author" content="Nathan Duplouy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+  <link rel="stylesheet" type="text/css" href="IndexStyle.css">
+  <link rel="stylesheet" type="text/css" href="Vue/Header/HeaderStyle.css">
+  <link rel="stylesheet" type="text/css" href="Vue/Footer/FooterStyle.css">
+  <meta charset="UTF-8">
+  <meta name="keywords"
+    content="HTML, CSS, JavaScript, gnomes, site vitrine, association, trollball, figurine, jeux, GN, LARP, Grandeur Nature">
+  <meta name="description" content="Site vitrine de l'association des Gnomes&Associés.">
+  <meta name="author" content="Nathan Duplouy">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-    <div id="header"></div>
-    <script>
+  <div id="header"></div>
+  <script>
     fetch("Vue/Header/Header.html")
-        .then(res => res.text())
-        .then(html => {
-            document.getElementById("header").innerHTML = html;
-        });
-    </script>
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html.replace(/{{ROOT}}/g, ".");
+      });
+  </script>
 
-    <main class="page-content">
-        <div class="content" id="D1">
-            <h1 id="title">Laissez vous aller à la Fantaisie</h1>
-        </div>
-        <div class="content" id="D2">
-            <p>
-                Association de plus de 10 ans, notre objectif premier est de partager nos passions.
-                <br>Nos activités sont très variées:<br> 
-                - Jeux de figurine et de plateaux <br> 
-                - Escrime ludique<br> 
-                - Peinture de figurine<br> 
-                - Création de maquettes <br> 
-                - Organisation d'évènements <br> 
-                - Jeux de rôles sur table et jeux de rôles Grandeur Nature<br> 
-                - Jeux communautaires<br> 
-                et bien d'autres domaines que vous ne soupçonnez pas.<br> <br> 
+  <main class="page-content">
+    <div class="content" id="D1">
+      <h1 id="title">Laissez vous aller à la Fantaisie</h1>
+    </div>
+    <div class="content" id="D2">
+      <p>
+        Association de plus de 10 ans, notre objectif premier est de partager nos passions.
+        <br>Nos activités sont très variées:<br>
+        - Jeux de figurine et de plateaux <br>
+        - Escrime ludique<br>
+        - Peinture de figurine<br>
+        - Création de maquettes <br>
+        - Organisation d'évènements <br>
+        - Jeux de rôles sur table et jeux de rôles Grandeur Nature<br>
+        - Jeux communautaires<br>
+        et bien d'autres domaines que vous ne soupçonnez pas.<br> <br>
 
-                Les Gnomes&Associés comptent entre 80 et 100 membres inscrits. <br> 
-                Une seule cotisation est demandée et vous permet de participer à toutes les activitées 
-                proposées par l'association, vous êtes libres d'y venir ou non.<br> <br> 
+        Les Gnomes&Associés comptent entre 80 et 100 membres inscrits. <br>
+        Une seule cotisation est demandée et vous permet de participer à toutes les activitées
+        proposées par l'association, vous êtes libres d'y venir ou non.<br> <br>
 
-                Nous aimons partager nos passions et les faire découvrir au public lors de nombreux 
-                évènements auquels nous participons ou que nous organisons.
-                (***lien nos évènements.)
-            </p>
+        Nous aimons partager nos passions et les faire découvrir au public lors de nombreux
+        évènements auquels nous participons ou que nous organisons.
+        évènements auquels nous participons ou que nous organisons.
+      </p>
+    </div>
+    <div class="separation" id="D3"></div>
+    <div class="content" id="D4">
+      <h2>Nos activités<br><br></h2>
+      <div class="activitees-wrapper">
+        <div class="activitees-banner">
+          <div class="activitees-item">
+            <a href="Pages/Escrime/Escrime.html">
+              <img src="Vue/images/Trollball/1.jpg" alt="Escrime ludique" class="activitees-img">
+              <h2 class="activitees-title">Escrime ludique</h2>
+            </a>
+          </div>
+          <div class="activitees-item">
+            <a href="Pages/Figurine/Figurine.html">
+              <img src="Vue/images/Fig/1.jpg" alt="Jeux de figurine" class="activitees-img">
+              <h2 class="activitees-title">Jeux de figurine</h2>
+            </a>
+          </div>
+          <div class="activitees-item">
+            <a href="Pages/GN/GN.html">
+              <img src="Vue/images/GN/1.jpg" alt="Grandeur Nature" class="activitees-img">
+              <h2 class="activitees-title">Grandeur Nature</h2>
+            </a>
+          </div>
         </div>
-        <div class="separation" id="D3"></div>
-        <div class="content" id="D4">
-            <h2>Nos activités<br><br></h2>
-            <div class="activitees-wrapper">
-                <div class="activitees-banner">
-                  <div class="activitees-item">
-                    <a href="Pages/Escrime/Escrime.html">
-                      <img src="Vue/images/Trollball/1.jpg" alt="Escrime ludique" class="activitees-img">
-                      <h2 class="activitees-title">Escrime ludique</h2>
-                    </a>
-                  </div>
-                  <div class="activitees-item">
-                    <a href="Pages/Figurine/Figurine.html">
-                      <img src="Vue/images/Fig/1.jpg" alt="Jeux de figurine" class="activitees-img">
-                      <h2 class="activitees-title">Jeux de figurine</h2>
-                    </a>
-                  </div>
-                  <div class="activitees-item">
-                    <a href="Pages/GN/GN.html">
-                      <img src="Vue/images/GN/1.jpg" alt="Grandeur Nature" class="activitees-img">
-                      <h2 class="activitees-title">Grandeur Nature</h2>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            <br><br>
-        </div>
-        <div class="separation" id="D3"></div>
-        <div class="content" id="D4">
-            <h2>Nous retrouver</h2>
-            <p>
-                Nos deux créneaux prioncipaux sont le dimanche matin de 10h00 à 12h00 dans le 
-                <a href="https://maps.app.goo.gl/CgsSkt2bhUXGuhXq8">parc du canal des moëres</a> de Teteghem 
-                pour l'escrime ludique et le mardi soir de 19h00 à 00h00 dans l'ancienne mairie de Teteghem au 
-                <a href="https://www.google.com/maps/@51.016906,2.4408881,3a,75y,253.7h,88.45t/data=!3m7!1e1!3m5!1sghqS_LxdkO9dY-cslRAuHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.5461802046028197%26panoid%3DghqS_LxdkO9dY-cslRAuHA%26yaw%3D253.69612615130285!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D">
-                7 Place de l'Hôtel de ville</a> en face de la place pour les jeux de rôles, jeux de plateaux, jeux comunautaires et peinture de figurine.<br>
-                Nous ouvrons également les locaux le samedi après midi plus occasionnelement sur demande des membres.<br>
-                Nous ouvrons toutes l'année chaque semaine même lors des vacances scolaires à moins que nous n'assurions un évènement.
-                Si vous souhaitez nous rejoindre, pensez à consulter la page 
-                <a href="https://www.facebook.com/GnomesEtAssocies?locale=fr_FR">facebook</a> qui vous indiquera si vous pouvez venir ou 
-                si nous assurons une animation empechant un créneau de se tenir.
-                
-            </p>
-        </div>
-    </main>
+      </div>
+      <br><br>
+    </div>
+    <div class="separation" id="D3"></div>
+    <div class="content" id="D4">
+      <h2>Nous retrouver</h2>
+      <p>
+        Nos deux créneaux principaux sont le dimanche matin de 10h00 à 12h00 dans le
+        <a href="https://maps.app.goo.gl/CgsSkt2bhUXGuhXq8">parc du canal des moëres</a> de Teteghem
+        pour l'escrime ludique et le mardi soir de 19h00 à 00h00 dans l'ancienne mairie de Teteghem au
+        <a
+          href="https://www.google.com/maps/@51.016906,2.4408881,3a,75y,253.7h,88.45t/data=!3m7!1e1!3m5!1sghqS_LxdkO9dY-cslRAuHA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D1.5461802046028197%26panoid%3DghqS_LxdkO9dY-cslRAuHA%26yaw%3D253.69612615130285!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D">
+          7 Place de l'Hôtel de ville</a> en face de la place pour les jeux de rôles, jeux de plateaux, jeux
+        communautaires et peinture de figurine.<br>
+        Nous ouvrons également les locaux le samedi après midi plus occasionnellement sur demande des membres.<br>
+        Nous ouvrons toutes l'année chaque semaine même lors des vacances scolaires à moins que nous n'assurions un
+        évènement.
+        Si vous souhaitez nous rejoindre, pensez à consulter la page
+        <a href="https://www.facebook.com/GnomesEtAssocies?locale=fr_FR">facebook</a> qui vous indiquera si vous pouvez
+        venir ou
+        si nous assurons une animation empêchant un créneau de se tenir.
 
-    <div id="footer"></div>
-    <script>
+      </p>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script>
     fetch("Vue/Footer/Footer.html")
-        .then(res => res.text())
-        .then(html => {
-            document.getElementById("footer").innerHTML = html;
-        });
-    </script>
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html.replace(/{{ROOT}}/g, ".");
+      });
+  </script>
 </body>
+
 </html>

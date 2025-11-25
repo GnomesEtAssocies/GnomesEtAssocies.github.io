@@ -17,7 +17,7 @@
     fetch("../../Vue/Header/Header.html")
         .then(res => res.text())
         .then(html => {
-            document.getElementById("header").innerHTML = html;
+            document.getElementById("header").innerHTML = html.replace(/{{ROOT}}/g, "../..");
         });
     </script>
 
@@ -119,7 +119,7 @@
     fetch("../../Vue/Footer/Footer.html")
         .then(res => res.text())
         .then(html => {
-            document.getElementById("footer").innerHTML = html;
+            document.getElementById("footer").innerHTML = html.replace(/{{ROOT}}/g, "../..");
         });
     </script>
 </body>
